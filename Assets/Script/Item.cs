@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Item : MonoBehaviour {
 
+
+	void OnTriggerEnter (Collider hit)
+	{
+
+	}
 	// Use this for initialization
 	void Start () {
 		
