@@ -11,9 +11,9 @@ public class PlayerController : MonoBehaviour {
 		float x = Input.GetAxis ("Horizontal");
 		float z = Input.GetAxis ("Vertical");
 
-		Rigidbody rigidbody = GetComponent<Rigidbody> ();
+		Rigidbody RigidBody = GetComponent<Rigidbody> ();
 
-		rigidbody.AddForce (x *speed,0, z *speed);
+        RigidBody.AddForce (x *speed,0, z *speed);
 
 	}
 
