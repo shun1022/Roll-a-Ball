@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	public float speed = 10;
+	public float speed = 10.0f;
 
 	void FixedUpdate()
 	{
@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour {
 
 		Rigidbody RigidBody = GetComponent<Rigidbody> ();
 
-        RigidBody.AddForce (x *speed,0, z *speed);
+        RigidBody.AddForce (x *speed, 0, z *speed);
 
 	}
 
