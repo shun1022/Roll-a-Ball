@@ -7,15 +7,10 @@ public class Item : MonoBehaviour {
 
 	void OnTriggerEnter (Collider hit)
 	{
-
-	}
-	// Use this for initialization
-	void Start () {
-		
+        if (hit.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
